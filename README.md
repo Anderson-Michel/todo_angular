@@ -1,10 +1,8 @@
-##PASSOS DO Development
-
-1 - criar uma estrutura para as páginas;
-2 - definir pasta de layouts para replicar itens que serão utilizados mais vezes com mais rapidez;
-3 - trabalhar nas rotas;
-4 - escolha do back end;
-5 - criando o service;
+Projeto em Angular
+usando as configurações:
+npm 6.9.0
+node v10.15.3
+Angular CLI: 7.3.9
 
 
 ##BACK-END
