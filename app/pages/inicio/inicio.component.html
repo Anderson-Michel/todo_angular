@@ -1,0 +1,55 @@
+<div class="palco">
+  <app-header></app-header>
+  <div align="center" style="width: 500px;margin: auto; padding: 20px 0 20px 0;">
+    <div style="float: right">
+      <app-botao [routerLink]="['tarefas/post']" botao="botao1" color="color1">Nova Tarefa</app-botao>
+    </div>
+  </div>
+  <div align="center" class="div-table">
+    <table align="center">
+      <thead>
+        <th>Status</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Action</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let list of tarefas">
+          <td>
+            <span *ngIf="list.status == 0">
+              <img src="assets/img/marcado0.png" alt="">
+            </span>
+            <span *ngIf="list.status > 0">
+              <img src="assets/img/marcado1.png" alt="">
+            </span>
+          </td>
+          <td>{{ list.name }}</td>
+          <td>{{ list.description }}</td>
+          <td>
+            <app-botao botao="botao2" color="color2">Editar</app-botao>
+            <app-botao botao="botao3" color="color3" (click)="concluir(this.list)">Concluir</app-botao>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div *ngIf="fechar">
+  <div class="align">
+    <div class="modal-fit">
+      <div align="center" class="align-text">
+        <h1 style="color: ">Parabéns</h1>
+      </div>
+      <hr class="align-hr">
+      <div align="center" >
+        <h3>Sua tarefa foi concluída com sucesso!</h3>
+        <p class="p">
+          <span class="span"><app-botao color="color2" botao="botao4" (click)="close()">Fechar</app-botao></span>
+          <span class="span"><app-botao color="color3" botao="botao4" (click)="finalizar()" >Concluído</app-botao></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

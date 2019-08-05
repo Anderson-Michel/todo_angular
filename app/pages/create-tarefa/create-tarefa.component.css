@@ -1,0 +1,25 @@
+
+
+.palco {
+  background: #E1E6D5;
+  margin: -13px;
+  padding: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+.input-form {
+  padding: 20px;
+  color: #2e7d32;
+  font-size: 20px;
+  width: 498px;
+  border: none;
+}
+
+.textarea-form {
+  margin-top: 10px;
+  padding: 20px;
+  color: #2e7d32;
+  font-size: 20px;
+  border: none;
+}

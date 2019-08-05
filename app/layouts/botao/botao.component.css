@@ -1,0 +1,51 @@
+
+/*colors para botoes, respectivament: cadastro, editar, excluir*/
+.color1 {
+  background: #2e7d32;
+}
+
+.color2 {
+  background: #a5d6a7;
+}
+
+.color3 {
+  background: #00695c;
+}
+
+
+/*botoes cadastro, demais; modal -> fechar, concluir*/
+.botao1 {
+  width: 80px;
+  height: 30px;
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao2, .botao3 {
+  margin-left: 5px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.botao3 {
+  margin-left: 5px;
+}
+
+.botao4 {
+  width: 60px;
+  height: 20px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao:hover {
+  text-decoration: none;
+}

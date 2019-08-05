@@ -1,0 +1,21 @@
+
+<div class="palco">
+    <app-header></app-header>
+    <form>
+      <div align="center" style="width: 500px; margin: auto; padding-top: 20px">
+        <div class="">
+          <input required class="input-form" type="text" placeholder="Nome da Tarefa" id="name" name="name" [(ngModel)]="this.tarefa.name">
+        </div>
+        <div class="">
+          <textarea required placeholder="Descreva a Tarefa" class="textarea-form" id="description" name="description" rows="8" cols="40" [(ngModel)]="this.tarefa.description"></textarea>
+        </div>
+      </div>
+      <div  style="width: 570px; margin: auto">
+        <div align="right" style="padding-top: 33px">
+          <app-botao (click)="saveTarefa(this.tarefa)" color="color1">Salvar</app-botao>
+        </div>
+      </div>
+    </form>
+
+
+</div>
